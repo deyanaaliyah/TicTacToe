@@ -3,7 +3,7 @@
 This project implements a real-time multiplayer Tic Tac Toe game using React, SignalR for communication, and a .NET Core backend. Players can create and join games, and the state of the game is synchronized across all participants in real time.
 
 <p align="center">
-  <img src="/frontend/public/Csharp_logo.png" alt="CSharp" height="100">
+  <img src="/frontend/public/Csharp_Logo.png" alt="CSharp" height="100">
   <img src="/frontend/public/logo192.png" alt="React" height="100">
   <img src="/frontend/public/signalR_Logo.png" alt="SignalR" height="100">
 </p>
