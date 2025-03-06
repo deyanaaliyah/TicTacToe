@@ -1,0 +1,25 @@
+{
+    "data": {
+        "game": {
+            "id": "h478dHjd",
+            "player1": "Dennis",
+            "player2": "computer",
+            "currentPlayer": "Dennis",
+            "boardId": "Hek4jIUh"
+        },
+        "board": {
+            "id": "Hek4jIUh",
+            "cells": ["x","","","","","o","","",""]
+        },
+        "player": {
+            "name": "Dennis",
+            "mark": "x"
+        }
+    }
+}
+
+[
+    "X","O",null,
+    "X","X","X",
+    "O",null,"O"
+]
