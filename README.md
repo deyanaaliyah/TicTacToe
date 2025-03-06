@@ -56,6 +56,7 @@ SignalR is used for bi-directional communication between the frontend and backen
 1. Game Creation: When a player creates a game, a SignalR event (```GameCreated```) is triggered to notify all clients.
 2. Game State Updates: Whenever a player makes a move, the game state is updated, and all connected clients are notified using the ```ReceiveGameUpdate``` event.
 3. Game Ended: When a game ends, a ```GameEnded``` event is triggered to notify all participants.
+4. Let a second player join the game: under construction :/
 
 To ensure a smooth gameplay experience, the frontend will listen for these events and update the game state in real time.
 
