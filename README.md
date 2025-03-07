@@ -62,6 +62,9 @@ SignalR is used for bi-directional communication between the frontend and backen
 
 To ensure a smooth gameplay experience, the frontend will listen for these events and update the game state in real time.
 
+## CORS Configuration
+The backend includes CORS (Cross-Origin Resource Sharing) support to allow communication between the React frontend and the .NET backend. This ensures that requests from the frontend (running on ```localhost:3000```) can interact with the API (running on ```localhost:5130```) without restrictions.
+
 ## AI
 The AI looks for patterns to win or block the opponent. It follows these steps:
 
