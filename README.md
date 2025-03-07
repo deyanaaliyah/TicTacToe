@@ -1,6 +1,8 @@
 # Tic Tac Toe Game using AI!
 
-This project implements a real-time multiplayer Tic Tac Toe game using React, SignalR for communication, and a .NET Core backend. Players can create and join games, and the state of the game is synchronized across all participants in real time.
+This project implements a real-time multiplayer Tic Tac Toe game using React, SignalR for communication, and a .NET Core backend. Players can create (and soon join games), and the state of the game is synchronized across all participants in real time.
+
+A Tic Tac Toe board consists of a 9-index array, where each position represents a possible move. The AI scans the board, evaluates threats and opportunities, and strategically places its move to maximize its chances of winning. Using a combination of pattern recognition and decision-making, it ensures that every game is a real challenge!
 
 <p align="center">
   <img src="/frontend/public/Csharp_Logo.png" alt="CSharp" height="120">
