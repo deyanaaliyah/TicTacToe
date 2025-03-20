@@ -10,6 +10,7 @@ A Tic Tac Toe board consists of a 9-index array, where each position represents 
   <img src="/frontend/public/signalR_Logo.png" alt="SignalR" height="100">
 </p>
 
+-----
 ## Installation
 ### Backend
 Clone the repository:
@@ -43,13 +44,18 @@ This will start the React app on http://localhost:3000.
 Open the app in your browser and enter your player name to either create a new game or join an existing one.
 Development
 
+-----
 ## API Endpoints
 - ```POST```&emsp;&emsp;```/api/Game/create```: Creates a new game.
 - ```POST```&emsp;&emsp;```/api/Game/{gameId}/join```: Joins an existing game.
 - ```GET```&emsp;&emsp;  ```/api/Game/{gameId}```: Fetches the current state of a game.
 - ```DELETE```&emsp;```/api/Game/{gameId}/end```: Ends the current game.
-  
+
+-----
 ## SignalR Integration
+<details closed>
+<summary>See how it's used</summary>
+<br>
 The backend uses SignalR to facilitate real-time communication between the frontend and backend. This allows game state updates, such as moves or player changes, to be broadcast instantly to all connected clients.
 
 
@@ -61,12 +67,20 @@ SignalR is used for bi-directional communication between the frontend and backen
 4. Let a second player join the game: under construction :/
 
 To ensure a smooth gameplay experience, the frontend will listen for these events and update the game state in real time.
+</details>
 
+-----
 ## CORS Configuration
-The backend includes CORS (Cross-Origin Resource Sharing) support to allow communication between the React frontend and the .NET backend. This ensures that requests from the frontend (running on ```localhost:3000```) can interact with the API (running on ```localhost:5130```) without restrictions.
 
-## AI
-The AI looks for patterns to win or block the opponent. It follows these steps:
+<details closed>
+<summary>See how it's used</summary>
+<br>
+  The backend includes CORS (Cross-Origin Resource Sharing) support to allow communication between the React frontend and the .NET backend. This ensures that requests from the frontend (running on ```localhost:3000```) can interact with the API (running on ```localhost:5130```) without restrictions.
+</details>
+
+-----
+## How does the AI work?
+The AI employs a pattern-based algorithm to analyze the board and make optimal decisions, ensuring a challenging gameplay experience. It follows these steps:
 
 1. **Finds Winning Moves:** The AI checks if it has two markers in a row, column, or diagonal with an empty space to win. If so, it places its marker in the empty spot.
 2. **Blocks the Opponent:** If the opponent has two markers in a row, column, or diagonal, the AI will block the third spot to stop them from winning.
